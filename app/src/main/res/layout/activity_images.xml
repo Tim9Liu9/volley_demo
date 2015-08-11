@@ -9,50 +9,26 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="图像获取"
-        android:id="@+id/btn_iamge"
-        android:onClick="btn_image_clicked"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="二次封装"
-        android:id="@+id/btn_2"
-        android:onClick="btn_2_clicked"/>
-
-   <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get String"
+        android:text="获取图片"
         android:id="@+id/btn_get"
-        android:onClick="get_clicked"/>
+        android:onClick="get_image_clicked"/>
 
-   <Button
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Json"
-        android:id="@+id/btn_getjson"
-        android:onClick="getjson_clicked"
-        android:textColor="#ffff2a1d" />
-
-   <Button
+        android:text="获取图片并且缓存"
+        android:id="@+id/btn_get_imageloader"
+        android:onClick="get_imageloader_clicked" />
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="POST String"
-        android:id="@+id/btn_pos"
-        android:onClick="post_clicked" />
-
-   <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="POST json"
-        android:id="@+id/btn_posjson"
-        android:onClick="postjson_clicked"
-        android:textColor="#ffff2a1d"
-        />
+        android:text="用NetworkImageView获取图片"
+        android:id="@+id/btn_get_network_image"
+        android:onClick="btn_get_network_image_clicked" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -64,5 +40,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal" />
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/networkImageView"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>

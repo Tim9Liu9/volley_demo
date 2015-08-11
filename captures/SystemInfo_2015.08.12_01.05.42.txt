@@ -1,0 +1,34 @@
+Applications Memory Usage (kB):
+Uptime: 9751425 Realtime: 9751425
+
+** MEMINFO in pid 8095 [com.timliu.volleyactivity] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     6033     5904        0        0    16678    16678    16089
+  Dalvik Heap     4167     3700        0        0    14352    10305     4047
+ Dalvik Other      460      392        0        0                           
+        Stack      144      144        0        0                           
+    Other dev        5        0        4        0                           
+     .so mmap     1229      148      112        0                           
+    .apk mmap      185        0       12        0                           
+    .ttf mmap      192        0       72        0                           
+    .dex mmap      720        0      716        0                           
+    code mmap     1468        0      208        0                           
+   image mmap     1108      536       12        0                           
+   Other mmap       40        4        0        0                           
+      Unknown       93       92        0        0                           
+        TOTAL    15844    10920     1136        0    31030    26983    20136
+ 
+ Objects
+               Views:       28         ViewRootImpl:        2
+         AppContexts:        4           Activities:        2
+              Assets:        2        AssetManagers:        2
+       Local Binders:       10        Proxy Binders:       17
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 

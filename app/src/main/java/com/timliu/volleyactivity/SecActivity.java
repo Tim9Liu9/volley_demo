@@ -1,27 +1,23 @@
 package com.timliu.volleyactivity;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import utils.VolleyInterface;
+import utils.VolleyRequest;
 
 /**
  * Created by tim2 on 15/8/9.
@@ -88,7 +84,7 @@ public class SecActivity extends Activity
         requestTag = "volley_post";
         VolleyRequest.RequestGet(this, url, requestTag, new VolleyInterface(this, VolleyInterface.listener, VolleyInterface.errorListener) {
             @Override
-            public void onMySuccess(String result){
+            public void onMySuccess(String result) {
                 JSONObject json = null;
                 try {
                     json = new JSONObject(result);

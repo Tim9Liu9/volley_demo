@@ -44,6 +44,14 @@ public class MainActivity extends Activity {
             MyApplication.getHttpQueues().cancelAll(requestTag);
     }
 
+
+    // 图片获取
+    public void btn_image_clicked(View view)
+    {
+        Log.i("TAG", "get_clicked");
+        startActivity(new Intent(this, ImagesActivity.class));
+    }
+
     // "二次封装"
     public void btn_2_clicked(View view)
     {

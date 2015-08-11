@@ -1,11 +1,11 @@
-package com.timliu.volleyactivity;
+package utils;
 
 import android.content.Context;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
-import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
+import com.timliu.volleyactivity.MyApplication;
 
 import java.util.Map;
 
